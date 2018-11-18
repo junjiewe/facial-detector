@@ -5,7 +5,7 @@ const Navigation = ({ onClickRouteChange, isSignedIn }) => {
     return (
       <nav style={{ display: "flex", justifyContent: "flex-end" }}>
         <p
-          onClick={() => onClickRouteChange("SignIn")}
+          onClick={() => onClickRouteChange("signout")}
           className="f3 shadow-3 link dim grow black pa3 pointer br bb bw1 b--black-50 b--dark-pink br3"
         >
           Sign Out
@@ -16,7 +16,7 @@ const Navigation = ({ onClickRouteChange, isSignedIn }) => {
     return (
       <nav style={{ display: "flex", justifyContent: "flex-end" }}>
         <p
-          onClick={() => onClickRouteChange("home")}
+          onClick={() => onClickRouteChange("signin")}
           className="f3 shadow-3 link dim grow black pa3 pointer br bb bw1 b--black-50 b--dark-pink br3"
         >
           Sign In
