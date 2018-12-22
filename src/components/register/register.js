@@ -23,7 +23,7 @@ class Register extends React.Component {
   };
 
   onSubmitRegister = () => {
-    fetch("http://localhost:3000/register", {
+    fetch("https://whispering-brushlands-42514.herokuapp.com/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -88,7 +88,7 @@ class Register extends React.Component {
               </fieldset>
               <div className="">
                 <input
-                  onClick={this.onSubmitRegistery}
+                  onClick={this.onSubmitRegister}
                   className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib pointer"
                   type="submit"
                   value="Register"
