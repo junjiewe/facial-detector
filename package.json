@@ -28,7 +28,9 @@
   ],
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "har-validator": "^5.1.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/junjiewe/facial-detector.git"
