@@ -79,7 +79,6 @@ class App extends Component {
     const image = document.getElementById("inputimage");
     const width = Number(image.width);
     const height = Number(image.height);
-    console.log(clarifiFace);
     return {
       leftCol: clarifiFace.left_col * width,
       topRow: clarifiFace.top_row * height,
@@ -98,7 +97,7 @@ class App extends Component {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        id: this.state.input
+        input: this.state.input
       })
     })
       .then(response => response.json())
